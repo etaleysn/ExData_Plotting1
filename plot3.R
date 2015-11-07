@@ -13,8 +13,8 @@ targetdata <- subset(plotdata,
 par (oma = c(0,1,0,0))
 plot(strptime(paste(targetdata$Date, targetdata$Time), '%d/%m/%Y %H:%M:%S' ) ,targetdata$Sub_metering_1, type = "l",  
      ylab = "Energy sub metering", xlab = "")
-lines(strptime(paste(targetdata$Date, targetdata$Time), '%d/%m/%Y %H:%M:%S' ), targetdata$Sub_metering_2, col = "blue", type = "l")
-lines(strptime(paste(targetdata$Date, targetdata$Time), '%d/%m/%Y %H:%M:%S' ), targetdata$Sub_metering_3, col = "red", type = "l")
-legend("topright", col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = "solid")
+lines(strptime(paste(targetdata$Date, targetdata$Time), '%d/%m/%Y %H:%M:%S' ), targetdata$Sub_metering_2, col = "red", type = "l")
+lines(strptime(paste(targetdata$Date, targetdata$Time), '%d/%m/%Y %H:%M:%S' ), targetdata$Sub_metering_3, col = "blue", type = "l")
+legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = "solid")
 ## write image file
 dev.off()

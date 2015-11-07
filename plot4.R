@@ -16,9 +16,9 @@ plot(strptime(paste(Date, Time), '%d/%m/%Y %H:%M:%S' ) ,Global_active_power, typ
 plot(strptime(paste(Date, Time), '%d/%m/%Y %H:%M:%S' ) ,Voltage, type = "l", xlab = "datetime")
 plot(strptime(paste(Date, Time), '%d/%m/%Y %H:%M:%S' ) ,Sub_metering_1, type = "l",  
      ylab = "Energy sub metering", xlab = "")
-lines(strptime(paste(Date, Time), '%d/%m/%Y %H:%M:%S' ), Sub_metering_2, col = "blue", type = "l")
-lines(strptime(paste(Date, Time), '%d/%m/%Y %H:%M:%S' ), Sub_metering_3, col = "red", type = "l")
-legend("topright", col = c("black", "blue", "red"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = "solid", bty = "n")
+lines(strptime(paste(Date, Time), '%d/%m/%Y %H:%M:%S' ), Sub_metering_2, col = "red", type = "l")
+lines(strptime(paste(Date, Time), '%d/%m/%Y %H:%M:%S' ), Sub_metering_3, col = "blue", type = "l")
+legend("topright", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty = "solid", bty = "n")
 plot(strptime(paste(Date, Time), '%d/%m/%Y %H:%M:%S' ) ,Global_reactive_power, type = "l", xlab = "datetime")
 })
 ## write image file
